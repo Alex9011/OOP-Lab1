@@ -1,0 +1,14 @@
+#pragma code_page(65001)
+#include <windows.h>
+#include "resource.h"
+
+IDD_TEXT_DIALOG DIALOGEX 0, 0, 300, 100
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Робота1 - Введення тексту"
+FONT 9, "Segoe UI"
+BEGIN
+    LTEXT "Введіть текст (до 255 символів):", -1, 12, 12, 276, 12
+    EDITTEXT IDC_TEXT_INPUT, 12, 30, 276, 16, ES_AUTOHSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON "Так", IDOK, 176, 70, 52, 16
+    PUSHBUTTON "Відміна", IDCANCEL, 236, 70, 52, 16
+END

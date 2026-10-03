@@ -1,0 +1,16 @@
+#pragma code_page(65001)
+#include <windows.h>
+#include "resource.h"
+
+IDD_NUMBER_DIALOG DIALOGEX 0, 0, 300, 112
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Робота2 - Вибір числа"
+FONT 9, "Segoe UI"
+BEGIN
+    LTEXT "Виберіть число від 1 до 100:", -1, 12, 12, 240, 12
+    SCROLLBAR IDC_NUMBER_SCROLL, 12, 32, 276, 14, SBS_HORZ | WS_TABSTOP
+    LTEXT "Поточне значення:", -1, 12, 56, 100, 12
+    LTEXT "1", IDC_NUMBER_VALUE, 116, 56, 50, 12
+    DEFPUSHBUTTON "Так", IDOK, 176, 82, 52, 16
+    PUSHBUTTON "Відміна", IDCANCEL, 236, 82, 52, 16
+END

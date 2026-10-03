@@ -1,0 +1,4 @@
+#pragma once
+#define IDD_NUMBER_DIALOG 201
+#define IDC_NUMBER_SCROLL 200
+#define IDC_NUMBER_VALUE 202
